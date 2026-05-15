@@ -9,8 +9,6 @@ int longestSubarray(vector<int>& arr, int k) {
 
     for (int i = 0; i < arr.size(); i++) {
         sum += arr[i];
-
-        // If sum itself equals k
         if (sum == k) {
             maxLen = i + 1;
         }
